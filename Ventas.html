@@ -1,0 +1,97 @@
+<html>
+  <head>
+       <title>💰VENTAS🌱</title>
+       <link rel="stylesheet"  href="Est1.css">
+      <link rel="stylesheet" type="text/css" href="Est2.css"/>
+  <style type="text/css">
+            body{
+                background-color: aquamarine;
+            }
+            h1{
+                text-align: center;
+                font: bold 1.5em Copperplate Gothic;
+                color: blue;
+                background-color: purple;
+                padding: 0.5em;
+                margin:0;
+            }
+            h2{
+                text-align: center;
+                font: bold 1.2em Rockwell;
+                background-color: turquoise;
+                padding: 0.2em;
+                margin:0;
+            }
+            p{
+                text-align: center;
+                font: 1em Dejavu Sans;
+                padding: 0.1em;
+                margin:0;
+                /*background-color: aliceblue;*/
+                color: ghostwhite;
+                text-shadow: black 0.1em 0.1em 0.1em, black -0.1em -0.1em 0.2em, black 0.1em 0.2em 0.1em;
+            }
+            button{
+                background-color: mistyrose;
+                color: darkblue;
+                font-family: cursive;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+<body background="Fondo.jpg">
+<BR><BR><BR><BR>
+
+    <div id="contenedor">
+      
+	<div id="cabecera">
+        
+        <right><img src="biosafe%20log%20-%20copia1.png"  /></right>
+
+        </div>
+      
+<div id="cabecera1">
+<HEADER><center>
+<p><BUTTON COLOR="001BFF"><FONT style="color:green" FACE="Muthiara -Demo Version-"
+size="4"><a style="color:blueviolet" href="Index%20BIOSAFE.html">Inicio</a></FONT></BUTTON> |
+<BUTTON COLOR="001BFF"><FONT style="color:red" FACE="Muthiara -Demo Version-"
+size="4"><a style="color:blueviolet" href="Ventas.html">Ventas</a></FONT></BUTTON>|
+<BUTTON COLOR="001BFF"><FONT style="color:red" FACE="Muthiara -Demo Version-"
+size="4"><a style="color:blueviolet" href="BIO-BLOCK.html">BIO-BLOCK</a></FONT></BUTTON>
+</center>
+</HEADER>
+</div>
+      <div id="contenido">
+<form>
+                <br>
+                <p>Ingrese las medidas de la pared para calcular la cantidad de ladrillos a ocupar.</p>
+                <p>Medidas de cada ladrillo: 40cm x 15cm </p>
+                <br>
+                <p>Largo de la pared: <input id="l" type="number" placeholder="Escriba la longitud en cm"  style="width: 168px" step=".1"> cm.</p>
+                <p>Altura de la pared: <input id="h" type="number" placeholder="Escriba la altura en cm"  style="width: 168px" step=".1"> cm.</p>
+                <br>
+                <p>Total de ladrillos: <input id="ladrillos" type="number" placeholder="Cantidad" style="width: 80px"><span id="lad"></span></p>
+                <p>Precio total $ <input id="p" type="number" placeholder="Total"  style="width: 60px"><span id="precio"></span></p>
+                <br>
+                <p><button type="button" onclick="precio_pared()">¡CALCULAR!</button> <button type="button" onclick="pagar()">¡PAGAR!</button></p>
+                <script type="text/javascript">
+                    function precio_pared(){
+                        var ladrillos;
+                        document.getElementById("lad").innerHTML = " ladrillos";
+                        ladrillos = Math.round((document.getElementById("l").value * document.getElementById("h").value) / 600);
+                        document.getElementById("ladrillos").value = (ladrillos);
+                        var p;
+                        document.getElementById("precio").innerHTML = "°° MXN ";
+                        p = (document.getElementById("ladrillos").value * 12);
+                        return document.getElementById("p").value = (p);
+                    }
+                    function pagar(){
+                        var monto=parseInt(prompt("Total a pagar: $"+precio_pared()+"°° MXN\n\nIngrese el monto a ingresar:"));
+                        var cambio=monto-precio_pared();
+                        alert("Su cambio es de: $"+cambio+"°° MXN.")
+                    }
+                </script>
+            </form>
+        
+    
+      </div>

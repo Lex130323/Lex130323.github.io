@@ -1,0 +1,76 @@
+
+<style>
+
+body {
+
+font-size: 1 em;
+
+font-family: Georgia, ‘Times New Roman’, times, serif;
+
+color:yellow;
+
+    background:"stars.png";}
+section.temas {
+background:
+#FFFFFA;
+border: #DEE22E
+3px solid;
+width: 20em;
+}
+footer{
+background:
+#FFFFFA;
+}
+
+HEAD{
+background:
+#FFFFFA;
+}
+
+p {
+
+margin-top: 10px;
+
+font-family: Agency FB, cursive; 
+color:red;
+
+
+}
+h1{
+
+font-family: Arial Rounded MT Bold;color:blueviolet;
+
+text-align:right;
+
+}
+h2 {
+
+font-family: Tahoma;color:orange;
+
+text-align: center;
+
+}
+
+h4{
+
+font-family: Tahoma;color:yellow;
+
+text-align:left;
+
+}
+list
+-style: upper
+-
+
+roman;
+}
+td ul {
+list-style: square;
+}
+ul { font-family: Georgia, 'Times New Roman', times, serif;
+
+color: '#BA7DFF'; }
+
+img {border: 6px double;border-radius: 3px;padding: 7px;width: 250px;}
+
+</style>
